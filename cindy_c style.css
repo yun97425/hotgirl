@@ -1,0 +1,168 @@
+.header{
+    background-color: rgb(42, 121, 171);
+}
+
+#education{
+    background-color: rgb(133, 48, 179);
+}
+
+div{
+    color: rgb(177, 21, 21);
+}
+* {
+    font-size: 1.5rem;
+}
+.red-text,
+.red {
+    color: rgb(212, 7, 21);
+}
+.blue .blue-text {
+    color: blue;
+}
+.green.green-text {
+    color: rgb(2, 136, 65);
+}
+.yellow{
+    color: darkgoldenrod;
+}
+#pink{
+    color: hotpink;
+}
+.rainbow-garden-liner-gardient {
+    padding: 15px 10px 5px 20px ;/* 上 右 下 左 */
+    background: linear-gradient(to right,  rgb(122, 194, 227),rgb(87, 149, 216),rgb(65, 109, 230) )
+}
+.my-btn {
+  /* background-color: aqua; 背景 */
+  background-image: url(./9efb919e2db3a06b0508218ea96806d9.jpg);
+  background-size: 150% contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center; /* 文字水平置中 */
+
+  padding: 50px; /* 內距 */
+  padding: top 50px;
+  padding: 70px 50px ;/* 上下 左右 */
+  border-radius: 150px; /* 圓角 */
+  font-weight: bold; /* 字體粗細 */
+  width: 50px; /* 寬度 */
+  box-shadow: 2px 2px 5px 2px gray; /* 陰影  x y 模糊半徑 陰影的擴張*/
+  /* margin:0 auto; */
+  box-sizing: border-box;/* 鎖定長寬比 設定邊界感 */
+  overflow: auto;
+    /* overflow: hidden; 超出邊界的隱藏 */
+    /* overflow: scroll; 可以滾來滾去 */
+    /* overflow: auto;平常是隱藏的進去才會出現 */
+    
+    /* display: flex;
+    justify-content: center;
+    align-items: center;  水平置中效果 下面兩個指令只有遇到flex才會發生作用*/
+
+    /* justify-content: space-between; 之間等距;
+    justify-content: space-around; 旁邊空白 中間等距 */
+    
+}
+ .love {
+  /* background-color: aqua; 背景 */
+  /* background-image: url(./1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; */
+  background-size: 150% contain;
+  background-color: aquamarine;
+  vertical-align: middle; /* 文字垂直置中 */
+  text-align: center; /* 文字水平置中 */
+  /* padding: 50px; 內距 */
+  /* padding-top: 50px; */
+  /* padding: 15px 10px 5px 20px; 上 右 下 左 */
+  margin: 20px 10px; /* 外距 上下 左右*/
+  border-radius: 150px; /* 圓角 */
+  font-weight: 800; /* 字體粗細 */
+  width: 150px; /* 寬度 */
+  height: 150px; /* 高度*/
+  line-height: 150px;/* 行距 */
+  /* box-shadow: 2px 2px 2px 2px gray; 陰影 */
+  /* margin: 0 auto; */
+  border: 1px double rgb(253, 112, 135);
+  /* border-width: 1px;
+  border-color: #fd345f;
+  border-style: solid; */
+  /* border-style: ; */
+  border-style: groove; /* 邊框 */
+  overflow: hidden;
+}
+
+.love:hover{
+    background-color: darkcyan;
+}
+
+.love:active{
+    box-shadow: 4px 4px 4px 4px gray;
+}
+.circle {
+  background: #692534;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  line-height: 100px;
+  border: #42b426 solid 10px;
+}
+.message {
+    padding: 3px 6px;
+    border: rgb(174, 49, 49) solid 1px;
+    border-radius: 10px;
+    background-color: darkslateblue;
+    color: bisque;
+    display: inline-block;/* position:absolute  絕對位置 *//* position:relative 相對位置*/ 
+    position: fixed;
+    bottom: 10px;/* bottom: 10px */
+    right: 10px;
+    transform: translateX(10px);
+    transition: all 1s ease;
+}
+.message:after {
+    content: "100";
+    position: absolute;
+    top:  -5px;
+    right: -5px;
+    font-size: 0.5rem;
+    color: red;
+}
+.message:hover{
+    padding: 3px 20px;
+    opacity: 0;
+    transition: all 1s ease-in-out;/* transition all 全部監聽 */
+}
+.message.move{
+    right: 50%;
+  opacity: 0;
+  transform: translateX(50%); 
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    position: relative;
+    border-radius: 25px; /* 圓角 */
+}
+.box-center{
+    display: inline-block;
+    color: chocolate;
+    background-color: black;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.5rem;
+    border-radius: 10px; /* 圓角 */
+}
+.fb{
+    border: 1px solid rgb(240, 183, 77);
+    display: flex;
+    width: 200px;
+    height: 200px;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
