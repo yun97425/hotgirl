@@ -128,6 +128,12 @@
 // console.log(big);
 
 // 做出99乘法表
+for (let i = 1; i <= 9; i++) {
+  for (let j = 1; j <= 9; j++) {
+    console.log(`${i} x ${j} = ${i * j}`);
+  }
+}
+
 // 成績計算公式 自動判斷成績
 // 100-95 A+
 // 94-90 A
@@ -135,8 +141,18 @@
 // 79-70 c
 // 69-0以下D
 
-for (let i = 1; i <= 9; i++) {
-  for (let j = 1; j <= 9; j++) {
-    console.log(`${i} x ${j} = ${i * j}`);
+const checkScore = function (score) {
+  if (score >= 95 && score <= 100) {
+    console.log("成績：A+");
+  } else if (score >= 90 && score <= 94) {
+    console.log("成績：A");
+  } else if (score >= 80 && score <= 89) {
+    console.log("成績：B");
+  } else if (score >= 70 && score <= 79) {
+    console.log("成績：C");
+  } else if (score >= 0 && score <= 69) {
+    console.log("成績：D");
+  } else {
+    console.log("輸入的成績無效，請輸入 0 到 100 之間的分數。");
   }
-}
+};
