@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scaleable=no, maximum-scale=1, minimum-scale=1"
+    />
     <title>寵愛醫美站</title>
     <style>
       .fat {
@@ -11,6 +14,7 @@
       }
     </style>
     <link rel="stylesheet" href="./cindy_c style.css" />
+    <script src="./hotmess.js"></script>
   </head>
   <body>
     <header>
@@ -33,10 +37,7 @@
       <h3>美容預約</h3>
       <p>佩特比堤寵物美容工作室</p>
       <a href="https://www.facebook.com/cindy.cheng.716/" target="_blank"
-        ><img
-          src="./original.png"
-          alt="可愛小狗
-        "
+        ><img src="./original.png" alt="可愛小狗"
       /></a>
       <strong>
         <h2>寵物美容項目</h2>
@@ -140,7 +141,127 @@
         <div style="font-size: 0.5rem">olive></div>
       </div>
     </main>
+    <style>
+      /* html {
+        font-size: calc(16px + 3vw);
+      } */
+      .parent {
+        font-size: 20px;
+      }
+      .useem {
+        font-size: 1em;
+      }
+      .userem {
+        font-size: 1rem;
+      } /*rem 可計算間距 */
+    </style>
+    <div class="parent">
+      <div class="useem">em</div>
+      <div class="userem">rem</div>
+    </div>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .rwd-box {
+        width: 25%;
+        padding: 10px;
+      }
+      .card {
+        padding: 10px;
+        border: 1px solid black;
+      }
+      .card .img {
+        background-color: rgb(176, 107, 101);
+        height: 100px;
+      }
+      .card .title {
+        font-size: 0.8em;
+        font-weight: bold;
+      }
+      .card .content {
+        font-size: 0.5em;
+        color: gray;
+      }
+      @media screen and (max-width: 480px) {
+        .rwd-box {
+          width: 100%;
+        }
+      }
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+      }
+      @media screen and (min-width: 769px) and (max-width: 1200px) {
+      }
+      @media screen and (min-width: 1200px) {
+      }
+    </style>
+    <div class="container">
+      <div class="rwd-box">
+        <div class="card">
+          <div class="img"></div>
+          <div class="title">Card Title</div>
+          <div class="content">Card content goes here.</div>
+        </div>
+      </div>
+      <div class="rwd-box">
+        <div class="card">
+          <div class="img"></div>
+          <div class="title">Card Title</div>
+          <div class="content">Card content goes here.</div>
+        </div>
+      </div>
+      <div class="rwd-box">
+        <div class="card">
+          <div class="img"></div>
+          <div class="title">Card Title</div>
+          <div class="content">Card content goes here.</div>
+        </div>
+      </div>
+      <div class="rwd-box">
+        <div class="card">
+          <div class="img"></div>
+          <div class="title">Card Title</div>
+          <div class="content">Card content goes here.</div>
+        </div>
+      </div>
+      <div class="rwd-box">
+        <div class="card">
+          <div class="img"></div>
+          <div class="title">Card Title</div>
+          <div class="content">Card content goes here.</div>
+        </div>
+      </div>
+      <div class="rwd-box">
+        <div class="card">
+          <div class="img"></div>
+          <div class="title">Card Title</div>
+          <div class="content">Card content goes here.</div>
+        </div>
+      </div>
+    </div>
+    <style>
+      .spinner {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 5px solid rgba(37, 188, 226, 0.68);
+        border-top: 5px solid rgb(94, 93, 93);
+        animation: spin 10s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <div class="spinner"></div>
+    <input id="year" type="text" placeholder="year" />
+    <button id="year_btn" type="button">計算</button>
+    <div id="answer">answer</div>
   </body>
 </html>
-
-<!-- 注釋內容-->
